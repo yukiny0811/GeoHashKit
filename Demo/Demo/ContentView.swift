@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         Text(result)
         Button("aaa") {
-            result = GeoHash.create(lat: 135, lon: 35.001, digitCount: 10)
+            result = GeoHash.create(lat: 135, lon: 35.001, precision: .m0_6)
         }
     }
 
